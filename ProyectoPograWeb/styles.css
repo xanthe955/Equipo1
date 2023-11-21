@@ -1,0 +1,83 @@
+/* Estilos para los enlaces de la Navbar */
+.navbar a {
+    color: #fff; /* Color del texto en la Navbar */
+}
+
+/* Estilos para los botones de acceder y registrarse */
+.navbar button {
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+/* Botón de acceder con color de fondo del Jumbotron */
+.navbar #btnAcceder {
+    background-color: #000;
+}
+
+/* Botón de registrarse con color azul */
+.navbar #btnRegistrarse {
+    background-color: #007BFF;
+}
+
+/* Estilo para la Navbar */
+.navbar {
+    padding: 15px; /* Espaciado interno */
+}
+
+/* Jumbotron con imagen de fondo */
+.jumbotron {
+    position: relative;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    padding: 100px 0;
+    background-image: url('/img/fondo_index.jpg'); /* Cambia la ruta de la imagen */
+    background-size: cover;
+    background-position: center center; /* Ajuste para centrar la imagen */
+}
+
+.jumbotron img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Coloca la imagen detrás del contenido */
+}
+
+/* Estilo para el contenido del Jumbotron */
+.jumbotron .container {
+    position: relative;
+    z-index: 1; /* Coloca el contenido sobre la imagen de fondo */
+}
+
+/* Estilo para el footer */
+footer {
+    bottom: 0;
+    width: 100%;
+    background-color: #343a40; /* Fondo del footer */
+    color: #fff; /* Color del texto en el footer */
+    padding: 10px; /* Espaciado interno del footer */
+}
+
+/* Estilo para la sección del formulario con imagen de fondo */
+.form-section {
+    background-image: url('/img/trabajo_equipo.jpg'); /* Cambia la ruta a la ubicación de tu imagen */
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Color del texto en la sección */
+    padding: 20px; /* Ajusta el espaciado interno según sea necesario */
+}
+
+/* Estilo para el texto dentro de la sección del formulario */
+.form-section p {
+    margin-bottom: 20px; /* Espaciado inferior para separar el texto del formulario */
+}
+
+/* Estilo para el color del texto de los labels */
+.form-section label {
+    color: #000; /* Cambia #000 por el color negro que prefieras */
+}
