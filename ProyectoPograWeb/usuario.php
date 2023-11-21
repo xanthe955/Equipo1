@@ -3,7 +3,7 @@ session_start();
 
 // Verificar si el usuario está autenticado
 if (!isset($_SESSION['usuario'])) {
-    header("Location: acceder.php"); // Si no está autenticado, redirigir a la página de acceso
+    header("Location: /ProyectoPograWeb/acceder.php"); // Si no está autenticado, redirigir a la página de acceso
     exit();
 }
 
@@ -17,7 +17,7 @@ $nombreUsuario = $_SESSION['usuario'];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/ProyectoPograWeb/styles.css">
     <title>Bienvenida</title>
 </head>
 <body>
@@ -33,7 +33,7 @@ $nombreUsuario = $_SESSION['usuario'];
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-        <a class="navbar-brand" href="index.php">Prog Web</a>
+        <a class="navbar-brand" href="/ProyectoPograWeb/index.php">Prog Web</a>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
@@ -42,7 +42,7 @@ $nombreUsuario = $_SESSION['usuario'];
             </ul>
             <ul class="navbar-nav ml-auto">
                 <p>
-                    <img src="/img/usuario.png" alt="Pequeña Imagen" style="width: 70px; margin-right: 10px;">
+                    <img src="/ProyectoPograWeb/img/usuario.png" alt="Pequeña Imagen" style="width: 70px; margin-right: 10px;">
                     <span style="color: white;">Bienvenido, <?php echo $nombreUsuario; ?></span>
                 </p>
             </ul>
@@ -55,7 +55,7 @@ $nombreUsuario = $_SESSION['usuario'];
 -->
 
 <div class="container">
-    <img src="/img/trabajo_equipo.jpg">
+    <img src="/ProyectoPograWeb/img/trabajo_equipo.jpg">
 </div>
 
 

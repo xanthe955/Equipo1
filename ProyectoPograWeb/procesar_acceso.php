@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['loginForm'])) {
     $password = $_POST['password'];
 
     // Validar el inicio de sesión en la base de datos (ajusta según tu estructura de la base de datos)
-    require_once 'Database.php';
+    require_once '/ProyectoPograWeb/Database.php';
 
     $database = new Database();
 
@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['loginForm'])) {
     if ($user && password_verify($password, $user['pwd'])) {
         // Inicio de sesión exitoso
         $_SESSION['usuario'] = $user['Nombres']; // Guardar el nombre del usuario en la sesión
-        header("Location: usuario.php"); // Redireccionar a usuario.php
+        header("Location: /ProyectoPograWeb/usuario.php"); // Redireccionar a usuario.php
         exit();
     } else {
         // Error de inicio de sesión

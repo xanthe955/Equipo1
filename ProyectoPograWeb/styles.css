@@ -34,7 +34,7 @@
     text-align: center;
     overflow: hidden;
     padding: 100px 0;
-    background-image: url('/img/fondo_index.jpg'); /* Cambia la ruta de la imagen */
+    background-image: url('/ProyectoPograWeb/img/fondo_index.jpg'); /* Cambia la ruta de la imagen */
     background-size: cover;
     background-position: center center; /* Ajuste para centrar la imagen */
 }
@@ -65,7 +65,7 @@ footer {
 
 /* Estilo para la sección del formulario con imagen de fondo */
 .form-section {
-    background-image: url('/img/trabajo_equipo.jpg'); /* Cambia la ruta a la ubicación de tu imagen */
+    background-image: url('/ProyectoPograWeb/img/trabajo_equipo.jpg'); /* Cambia la ruta a la ubicación de tu imagen */
     background-size: cover;
     background-position: center;
     color: #fff; /* Color del texto en la sección */

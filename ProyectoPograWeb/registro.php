@@ -1,5 +1,5 @@
 <?php
-require_once 'Database.php'; // Ajusta la ruta según la ubicación de tu archivo Database.php
+require_once '/ProyectoPograWeb/Database.php'; // Ajusta la ruta según la ubicación de tu archivo Database.php
 
 // Crear una instancia de la clase Database
 $database = new Database();
@@ -54,7 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/ProyectoPograWeb/styles.css">
     <title>Tu Proyecto</title>
 </head>
 <body>
@@ -70,7 +70,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-        <a class="navbar-brand" href="index.php">Prog Web</a>
+        <a class="navbar-brand" href="/ProyectoPograWeb/index.php">Prog Web</a>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
